@@ -58,6 +58,9 @@ jobs:
         with:
           node-version: '18.x'
 
+      - name: Configure GitHub Pages
+        run: npx next export
+
       - name: Install dependencies
         run: npm install
 
